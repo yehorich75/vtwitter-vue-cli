@@ -3,19 +3,20 @@
         <div class="top">
             <div class="top__inner">
             </div>
-            <SlickCarousel />
+            <!-- <SlickCarousel /> -->
+            <Slides />
         </div>    
     </main>
 </template>
 
 <script>
 
-    import SlickCarousel from './SlickCarousel.vue';
+    import Slides from '@/components/Slides.vue';
 
     export default ({
         name: 'MainContent',
         components: {
-            SlickCarousel
+            Slides
         },
         data (){
             return {
