@@ -2,7 +2,8 @@
     <div class="slides">
         <div class="slides-inner">
             <div v-for="slide in slides" :key="slide.i">
-                <Slide :slide="slide"></Slide>
+                <!-- {{slides.src}} -->
+                <Slide v-bind:slide="slide"></Slide>
             </div>
         </div>
     </div>
@@ -19,6 +20,9 @@ export default {
                 { src: '../assets/images/slider/slider-perfect-chandeliers.jpg', i: 2 }
             ]
         }
+    },
+    props: {
+        slide: ['slide']
     },
     components: {
         Slide: Slide

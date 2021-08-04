@@ -1,6 +1,7 @@
 <template>
     <div class="slide">
-        <img :src="slide.src">
+        <img v-bind:src="slide.src" width="700">
+        <!-- {{slide.src}} -->
     </div>
 </template>
 
