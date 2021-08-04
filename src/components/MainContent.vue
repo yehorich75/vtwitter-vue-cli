@@ -3,14 +3,14 @@
         <div class="top">
             <div class="top__inner">
             </div>
-            <SlickCarousel />
+            <!-- <SlickCarousel /> -->
         </div>    
     </main>
 </template>
 
 <script>
 
-    import SlickCarousel from './SlickCarousel.vue';
+    // import SlickCarousel from './SlickCarousel.vue';
 
     export default ({
         name: 'MainContent',
