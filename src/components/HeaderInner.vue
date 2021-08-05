@@ -37,9 +37,9 @@
     
 </template>
 
-<script lang="ts">
-    import HeaderLogo from "@/components/HeaderLogo.vue";
-    import SideMenu from "@/components/SideMenu.vue";
+<script>
+    import HeaderLogo from "../components/HeaderLogo.vue";
+    import SideMenu from "../components/SideMenu.vue";
 
 export default{
     name: 'HeaderInner',
@@ -50,7 +50,7 @@ export default{
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 .header__inner {
     display: flex;
@@ -71,18 +71,19 @@ export default{
 .menu {
     padding-right: 1.5rem;
     font-size: 1.6rem;
+    &__list {
+        display: flex;
+        list-style: none;
+        &-item {
+            padding-right: 4.5rem;
+            padding-left: 3.5rem;
+        }
+        &-link {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: rgba(54, 56, 56, 0.9);
+        }
+    }
 }
-.menu__list {
-    display: flex;
-    list-style: none;
-}
-.menu__list-item {
-    padding-right: 4.5rem;
-    padding-left: 3.5rem;
-}
-.menu__list-link {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: rgba(54, 56, 56, 0.9);
-}
+
 </style>
