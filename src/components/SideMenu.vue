@@ -17,8 +17,13 @@
 
 <script>
 export default {
-    setup() {
-        
+    data () {
+        return {
+            // closeIcon: require('../assets/images/svg/close.svg'),
+            // logoBig: require('../assets/images/svg/logo-big.svg'),
+            // sideMenuImg: require('../assets/images/side-menu__img.jpg')
+
+        }
     }
 }
 

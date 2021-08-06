@@ -27,7 +27,7 @@
                     </ul>
                 </nav>
                 <button class="header__btn">
-                    <img src="src/assets/images/svg/icon_menu.svg" alt="icon menu">
+                    <img src="../assets/images/svg/icon_menu.svg" alt="icon menu">
                 </button>
 
                 <SideMenu />
@@ -46,7 +46,12 @@ export default{
     components: {
         HeaderLogo,
         SideMenu
-    }
+    },
+    // data () {
+    //     return {
+    //         iconMenu: require('../assets/images/svg/icon_menu.svg')
+    //     }
+    // }
 }
 </script>
 
