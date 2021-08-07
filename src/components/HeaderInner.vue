@@ -38,8 +38,8 @@
 </template>
 
 <script lang="ts">
-    import HeaderLogo from "@/components/HeaderLogo";
-    import SideMenu from "@/components/SideMenu";
+    import HeaderLogo from "@/components/HeaderLogo.vue";
+    import SideMenu from "@/components/SideMenu.vue";
 
 export default{
     name: 'HeaderInner',

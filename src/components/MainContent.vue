@@ -4,18 +4,19 @@
             <div class="top__inner">
             </div>
             <!-- <SlickCarousel /> -->
+            <Slides />
         </div>    
     </main>
 </template>
 
 <script>
 
-    // import SlickCarousel from './SlickCarousel.vue';
+    import Slides from '@/components/Slides.vue';
 
     export default ({
         name: 'MainContent',
         components: {
-            SlickCarousel
+            Slides
         },
         data (){
             return {
@@ -44,62 +45,58 @@
     })
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 /* Slider */
 
 .top__inner {
     margin-bottom: 7rem;
-    position: relative;  
-}
-
-.top__inner::after {
-    content: '';
-    background-image: url(../assets/images/slider-top-bg.jpg);
-    width: 100%;
-    height: 72.2rem;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-}
-
-.top__slider-item {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-}
-
-.top__slider-info {
-    max-width: 64.5rem;
-}
-
-.top__slider-img {
-    max-width: 70.3rem;
-    object-fit: cover;
-    margin-right: 2.5rem;
-    margin-left: -1.5rem;
-}
-
-.top__slider-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 11rem;
-    line-height: 13.5rem;
-    color: #363838;
     position: relative;
+    &::after {
+        content: '';
+        background-image: url(../assets/images/slider-top-bg.jpg);
+        width: 100%;
+        height: 72.2rem;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }  
 }
 
-.top__slider-title::after {
-    content: '';
-    width: 18.5rem;
-    background-color: #6d7278;
-    height: 1px;
-    display: block;
-    margin: 2.6rem 0;
-}
-
-.top__slider-text {
-    max-width: 58.5rem;
-}
+.top__slider {
+    &-item {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+    &-info {
+        max-width: 64.5rem;
+    }
+    &-img {
+        max-width: 70.3rem;
+        object-fit: cover;
+        margin-right: 2.5rem;
+        margin-left: -1.5rem;
+    }
+    &-title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 11rem;
+        line-height: 13.5rem;
+        color: #363838;
+        position: relative;
+        &::after {
+            content: '';
+            width: 18.5rem;
+            background-color: #6d7278;
+            height: 1px;
+            display: block;
+            margin: 2.6rem 0;
+        }
+    }
+    &-text {
+        max-width: 58.5rem;
+    }
+}s
 
 .slick-list {
     margin-bottom: 10rem;
