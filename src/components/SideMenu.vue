@@ -17,8 +17,13 @@
 
 <script>
 export default {
-    setup() {
-        
+    data () {
+        return {
+            // closeIcon: require('../assets/images/svg/close.svg'),
+            // logoBig: require('../assets/images/svg/logo-big.svg'),
+            // sideMenuImg: require('../assets/images/side-menu__img.jpg')
+
+        }
     }
 }
 
@@ -29,7 +34,7 @@ export default {
 // })
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 /* Side-menu */
 
@@ -45,52 +50,43 @@ export default {
     box-shadow: -3px 0px 4px 1px #3638380f;
     transition: all 0.6s;
     z-index: 100;
-}
-
-.side-menu .side-menu--close {
-    transform: translateX(500%);
-}
-
-.side-menu__content {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.side-menu__title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3.6rem;
-    line-height: 5.1rem;
-    color: #363838;
-    font-weight: 700;
-}
-
-.side-menu__title::after {
-    content: '';
-    background-color: #6d7278;
-    height: 1px;
-    width: 25.2rem;
-    display: block;
-    margin: 1.8rem auto 2.2rem;
+    &--close {
+        transform: translateX(500%);
     }
-
-.side-menu__logo {
-    margin-bottom: 3rem;
+    &__content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-
-.side-menu__text {
-    font-size: 1.6rem;
-    line-height: 2.7rem;
-    margin-bottom: 4rem;
-    max-width: 48.3rem;
+    &__title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3.6rem;
+        line-height: 5.1rem;
+        color: #363838;
+        font-weight: 700;
+        &::after {
+            content: '';
+            background-color: #6d7278;
+            height: 1px;
+            width: 25.2rem;
+            display: block;
+            margin: 1.8rem auto 2.2rem;
+        }
+    }
+    &__logo {
+        margin-bottom: 3rem;        
+    }
+    &__text {
+        font-size: 1.6rem;
+        line-height: 2.7rem;
+        margin-bottom: 4rem;
+        max-width: 48.3rem;
+    }
+    &__img {
+        width: 100%;
+        max-width: 48.5rem;
+        height: auto;
+    }
 }
-
-.side-menu__img {
-    width: 100%;
-    max-width: 48.5rem;
-    height: auto;
-}
-
-
 </style>
