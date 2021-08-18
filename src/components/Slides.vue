@@ -1,7 +1,8 @@
 <template>
     <carousel :items-to-show="1.5">
-        <slide v-for="slide in slides" :key="slide">
-            {{ slide }}
+        <slide v-for="slide in slides" :key="slide.id">
+            <!-- {{ slide.src }} -->
+            <img :class="slideImgClass" :src="slide.src">
         </slide>
 
         <template #addons>
@@ -31,24 +32,41 @@ export default {
             slides: [
                 {
                     id: '1',
-                    src: '../assets/images/slider/slider-colorful-gifts.jpg', 
+                    src: require('../assets/images/slider/slider-colorful-gifts.jpg'), 
                     alt: 'Slider Image 1',
                     title: 'Чудові подарунки',
                     text: 'Deep v you probably havent heard of them banh mi synth actually affogatAesthetic lyft ethical drinking vinegar austint'},
                 {
                     id: '2',
-                    src: '../assets/images/slider/slider-detailed-elegance.jpg',
+                    src: require('../assets/images/slider/slider-detailed-elegance.jpg'),
                     alt: 'Slider Image 2',
                     title: 'Детальна елегантність', 
                     ext: 'Deep v you probably havent heard of them banh mi synth actually affogatAesthetic lyft ethical drinking vinegar austint'},
                 {
                     id: '3',
-                    src: '../assets/images/slider/slider-perfect-chandeliers.jpg',
+                    src: require('../assets/images/slider/slider-perfect-chandeliers.jpg'),
                     alt: 'Slider Image 3',
                     title: 'Ідеальні люстри',
                     text: 'Deep v you probably havent heard of them banh mi synth actually affogatAesthetic lyft ethical drinking vinegar austint'}
-            ]
+            ],
+            slideClass: 'slide',
+            slideImgClass: 'slide__img'
         }
     }
 };
 </script>
+
+<style lang="scss" scoped>
+
+.carousel {
+    width: 700px;
+    &__slide {
+        width: 700px;
+        img {
+            max-width: 700px;
+            height: auto;
+        }
+    }
+}
+
+</style>

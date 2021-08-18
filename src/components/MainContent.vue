@@ -2,9 +2,11 @@
     <main class="main-content">
         <div class="top">
             <div class="top__inner">
+                <div class="container">
+                    <Slides />
+                </div>
             </div>
             <!-- <SlickCarousel /> -->
-            <Slides />
         </div>    
     </main>
 </template>
