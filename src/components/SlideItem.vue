@@ -1,6 +1,6 @@
 <template>
     <div class="slide">
-        <img v-bind:src="slide.src" alt="">
+        <img :src="slide.src" :alt="slide.alt">
         <!-- In slide with href {{ slide.src }} -->
     </div>
 </template>
