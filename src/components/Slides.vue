@@ -60,6 +60,9 @@ export default {
 
 .carousel {
     width: 700px;
+    &__track {
+        transform: translateX(-700px);
+    }
     &__slide {
         width: 700px;
         img {
