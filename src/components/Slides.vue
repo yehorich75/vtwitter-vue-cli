@@ -3,6 +3,10 @@
         <slide v-for="slide in slides" :key="slide.id">
             <!-- {{ slide.src }} -->
             <img :class="slideImgClass" :src="slide.src">
+            <div class="top__slider-info">
+                <h2 class="top__slider-title">{{ slide.title }}</h2>
+                <p class="top__slider-text">{{ slide.text }}</p>
+            </div>
         </slide>
 
         <template #addons>
@@ -59,17 +63,18 @@ export default {
 <style lang="scss" scoped>
 
 .carousel {
-    width: 700px;
+    width: 100%;
     &__track {
         transform: translateX(-700px);
     }
     &__slide {
-        width: 700px;
+        width: 100%;
         img {
             max-width: 700px;
             height: auto;
         }
     }
 }
+
 
 </style>
