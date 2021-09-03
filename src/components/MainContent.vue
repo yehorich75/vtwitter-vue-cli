@@ -4,9 +4,9 @@
             <div class="top__inner">
                 <div class="container">
                     <Slides />
+                    <SlickCarousel v-bind="settings" />
                 </div>
             </div>
-            <!-- <SlickCarousel /> -->
         </div>    
     </main>
 </template>
@@ -14,11 +14,15 @@
 <script>
 
     import Slides from '@/components/Slides.vue';
+    import VueSlickCarousel from 'vue-slick-carousel'
+    // optional style for arrows & dots
+    import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
     export default ({
         name: 'MainContent',
         components: {
-            Slides
+            Slides,
+            VueSlickCarousel
         },
         data (){
             return {
