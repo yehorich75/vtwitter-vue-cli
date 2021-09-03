@@ -65,7 +65,7 @@ export default {
 .carousel {
     width: 100%;
     &__slide {
-        width: 100%;
+        width: 106%;
         img {
             max-width: 700px;
             height: auto;

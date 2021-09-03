@@ -51,7 +51,7 @@
     })
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 /* Slider */
 
 
@@ -77,7 +77,7 @@
             align-items: center;
         }
         &-info {
-            max-width: 64.5rem;
+            max-width: 41.5rem;
         }
         &-img {
             max-width: 70.3rem;
@@ -103,6 +103,7 @@
         }
         &-text {
             max-width: 58.5rem;
+            padding: 30px;
         }
     }
 }
