@@ -1,5 +1,5 @@
 <template>
-    <carousel :items-to-show="1.5">
+    <carousel :items-to-show="1">
         <slide v-for="slide in slides" :key="slide.id">
             <!-- {{ slide.src }} -->
             <img :class="slideImgClass" :src="slide.src">
@@ -65,7 +65,7 @@ export default {
 .carousel {
     width: 100%;
     &__slide {
-        width: 106%;
+        width: 100% !important;
         img {
             max-width: 700px;
             height: auto;

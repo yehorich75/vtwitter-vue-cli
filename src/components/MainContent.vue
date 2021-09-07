@@ -78,6 +78,8 @@
         }
         &-info {
             max-width: 41.5rem;
+            text-align: left;
+            padding: 3rem;
         }
         &-img {
             max-width: 70.3rem;
@@ -88,8 +90,8 @@
         &-title {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
-            font-size: 11rem;
-            line-height: 13.5rem;
+            font-size: 6rem;
+            line-height: 5.5rem;
             color: #363838;
             position: relative;
             &::after {
@@ -103,7 +105,6 @@
         }
         &-text {
             max-width: 58.5rem;
-            padding: 30px;
         }
     }
 }
