@@ -38,13 +38,13 @@
                         image: 'slider-detailed-elegance.jpg',
                         alt: 'Slider Image 2',
                         title: 'Детальна елегантність', 
-                        ext: 'Deep v you probably havent heard of them banh mi synth actually affogatAesthetic lyft ethical drinking vinegar austint'},
+                        text: 'Deep v you probably havent heard of them banh mi synth actually affogatAesthetic lyft ethical drinking vinegar austint'},
                     {
                         id: '3',
                         image: 'slider-perfect-chandeliers.jpg',
                         alt: 'Slider Image 3',
                         title: 'Ідеальні люстри',
-                        text: 'Deep v you probably havent heard of them banh mi synth actually affogatAesthetic lyft ethical drinking vinegar austint'}
+                        text: 'Ефектні шедеври освітлення, зроблені з кращих матеріалів Землі, щоб забезпечити якість світового рівня та ідеальне освітлення для всіх стилів інтер’єру'}
                 ]
             }
         }
@@ -77,7 +77,6 @@
             align-items: center;
         }
         &-info {
-            max-width: 41.5rem;
             text-align: left;
             padding: 3rem;
         }
@@ -90,8 +89,8 @@
         &-title {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
-            font-size: 6rem;
-            line-height: 5.5rem;
+            font-size: 5rem;
+            line-height: 4.5rem;
             color: #363838;
             position: relative;
             &::after {
@@ -104,7 +103,6 @@
             }
         }
         &-text {
-            max-width: 58.5rem;
         }
     }
 }

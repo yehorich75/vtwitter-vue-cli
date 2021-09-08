@@ -63,9 +63,7 @@ export default {
 <style lang="scss" scoped>
 
 .carousel {
-    width: 100%;
     &__slide {
-        width: 100% !important;
         img {
             max-width: 700px;
             height: auto;
