@@ -1,5 +1,5 @@
 <template>
-    <carousel :items-to-show="1">
+    <carousel :items-to-show="1" :fade="true">
         <slide v-for="slide in slides" :key="slide.id">
             <!-- {{ slide.src }} -->
             <img :class="slideImgClass" :src="slide.src">
@@ -45,13 +45,13 @@ export default {
                     src: require('../assets/images/slider/slider-detailed-elegance.jpg'),
                     alt: 'Slider Image 2',
                     title: 'Детальна елегантність', 
-                    ext: 'Deep v you probably havent heard of them banh mi synth actually affogatAesthetic lyft ethical drinking vinegar austint'},
+                    text: 'Deep v you probably havent heard of them banh mi synth actually affogatAesthetic lyft ethical drinking vinegar austint'},
                 {
                     id: '3',
                     src: require('../assets/images/slider/slider-perfect-chandeliers.jpg'),
                     alt: 'Slider Image 3',
                     title: 'Ідеальні люстри',
-                    text: 'Deep v you probably havent heard of them banh mi synth actually affogatAesthetic lyft ethical drinking vinegar austint'}
+                    text: 'Ефектні шедеври освітлення, зроблені з кращих матеріалів Землі, щоб забезпечити якість світового рівня та ідеальне освітлення для всіх стилів інтер’єру'}
             ],
             slideClass: 'slide',
             slideImgClass: 'slide__img'

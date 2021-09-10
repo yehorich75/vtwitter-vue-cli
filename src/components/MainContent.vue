@@ -4,7 +4,6 @@
             <div class="top__inner">
                 <div class="container">
                     <Slides />
-                    <SlickCarousel v-bind="settings" />
                 </div>
             </div>
         </div>    
@@ -21,31 +20,10 @@
     export default ({
         name: 'MainContent',
         components: {
-            Slides,
-            VueSlickCarousel
+            Slides
         },
         data (){
             return {
-                sliderItems: [
-                    {
-                        id: '1',
-                        image: 'slider-colorful-gifts.jpg', 
-                        alt: 'Slider Image 1',
-                        title: 'Чудові подарунки',
-                        text: 'Deep v you probably havent heard of them banh mi synth actually affogatAesthetic lyft ethical drinking vinegar austint'},
-                    {
-                        id: '2',
-                        image: 'slider-detailed-elegance.jpg',
-                        alt: 'Slider Image 2',
-                        title: 'Детальна елегантність', 
-                        text: 'Deep v you probably havent heard of them banh mi synth actually affogatAesthetic lyft ethical drinking vinegar austint'},
-                    {
-                        id: '3',
-                        image: 'slider-perfect-chandeliers.jpg',
-                        alt: 'Slider Image 3',
-                        title: 'Ідеальні люстри',
-                        text: 'Ефектні шедеври освітлення, зроблені з кращих матеріалів Землі, щоб забезпечити якість світового рівня та ідеальне освітлення для всіх стилів інтер’єру'}
-                ]
             }
         }
     })
