@@ -6,10 +6,13 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">Про нас</a>
+                            <a class="menu__list-link" href="#">Світильники</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">Gallery</a>
+                            <a class="menu__list-link" href="#">Кришталеві підвіски</a>
+                        </li>
+                                                <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Кришталева плитка</a>
                         </li>
                     </ul>
                 </nav>
@@ -19,10 +22,13 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">Blog</a>
+                            <a class="menu__list-link" href="#">3D сувеніри</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">Contact</a>
+                            <a class="menu__list-link" href="#">Фігурки</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Стрази</a>
                         </li>
                     </ul>
                 </nav>
@@ -75,7 +81,8 @@ export default{
 
 .menu {
     padding-right: 1.5rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
     &__list {
         display: flex;
         list-style: none;
@@ -87,6 +94,7 @@ export default{
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             color: rgba(54, 56, 56, 0.9);
+            text-decoration: none;
         }
     }
 }
